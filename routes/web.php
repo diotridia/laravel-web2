@@ -24,3 +24,8 @@ Route::get('/halamandua', function () {
 Route::get('/halamantiga', function () {
     return view('halamantiga');
 });
+
+
+Route::resource('halaman', 'contoh');
+Route::get('/contoh/tambah', 'contoh@tambah');
+
